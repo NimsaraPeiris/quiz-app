@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:phi_app/components/my_colors.dart';
 import 'package:phi_app/pages/task_management_page.dart';
 import 'package:phi_app/pages/analytics_dashboard_page.dart';
 import 'package:phi_app/pages/data_reporting_page.dart';
@@ -53,14 +52,14 @@ class HomePageList extends StatelessWidget {
             child: Center(
               child: ListTile(
                 leading: Icon(items[index]['icon'],
-                    size: 34, color: MyColors.mainColor),
+                    size: 34, color: Colors.blue),
                 title: Text(
                   items[index]['title'],
                   style: const TextStyle(
                       fontSize: 17, fontWeight: FontWeight.bold),
                 ),
                 trailing: const Icon(Icons.arrow_forward_ios,
-                    size: 16, color: MyColors.mainColor),
+                    size: 16, color: Colors.blue),
                 onTap: () {
                   _navigateToPage(context, items[index]['title']);
                 },

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:phi_app/components/my_colors.dart';
 
 class AnalyticsDashboardPage extends StatefulWidget {
   const AnalyticsDashboardPage({super.key});
@@ -15,7 +14,7 @@ class _AnalyticsDashboardPageState extends State<AnalyticsDashboardPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: MyColors.mainColor),
+          icon: const Icon(Icons.arrow_back, color: Colors.blue),
           onPressed: () => Navigator.pop(context),
         ),
         title: const Text(
